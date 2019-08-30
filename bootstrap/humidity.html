@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- These meta tags come first. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Theme Example</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.jqplot.js"></script>
+    <script type="text/javascript" src="../src/plugins/jqplot.canvasTextRenderer.js"></script>
+    <script type="text/javascript" src="../src/plugins/jqplot.canvasAxisLabelRenderer.js"></script>
+    <link rel="stylesheet" type="text/css" href="../src/jquery.jqplot.css" />
+
+    
+    <script type="text/javascript" src="../src/plugins/jqplot.dateAxisRenderer.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="dist/js/plot.js"></script>
+    <script src="dist/js/ajax/ajaxManager.js"></script>
+    <script src="dist/js/ajax/updateScore.js"></script>
+
+
+    
+
+    <style>
+    #list{
+      height: 200px;
+      width: 200px;
+      float: left;
+      margin-top: 10px;
+    }
+
+    #plot{
+      float: right;
+      width: 900px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    h2{
+      text-align: center;
+    }
+    .btn{
+      float: right;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li button{
+      height: 100%;
+      width: 100%;
+    }
+    #dx{float: right;margin-top: 20px;}
+    #sx{float: left;}
+    </style>
+  </head>
+
+  <body onload="begin()">
+    <div id="sx">
+      <img src="../bootstrap/img/logo2.png" height="400" width="300">
+    </div>
+    <div id="dx">
+    <a href="index.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-home"></span> Home
+        </a>
+    <div class="container">            
+      <ul class="nav nav-pills" role="tablist" id="tablist">
+        <li ><a href="../bootstrap/power.html">Power</a></li>
+        <li><a href="../bootstrap/temperature.html">Temperature</a></li>
+        <li><a href="../bootstrap/battery.html">Battery</a></li>
+        <li><a href="../bootstrap/radio.html">Radio</a></li> 
+        <li class="active"><a href="../bootstrap/humidity.html">Humidity</a></li>
+        <li ><a href="../bootstrap/light.html">Light</a></li>       
+      </ul>
+    </div>
+    <h2 id="parameter">humidity</h2>
+
+    <div class="container">                 
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#" id="name">Humidity</a></li>        
+  </ul>
+  <div id="list">
+      <ul class="list-group" id="nodes_list">
+      </ul>
+    </div>
+    <div id="plot"></div>
+</div>
+ </div>   
+    
+  </body>
+</html>

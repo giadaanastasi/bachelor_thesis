@@ -1,0 +1,10 @@
+#viewport{
+	margin-left: 30px;
+	border: solid 0.12em;
+}
+
+body{
+  margin:0;
+  padding:20px;
+  font:12px/17px Arial, sans-serif;
+}
